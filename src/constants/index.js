@@ -15,6 +15,11 @@ import {
     bootstrap,
     threejs,
     net,
+    sql,
+    python,
+    gimp,
+    office,
+    unity,
 
     p1,
     p2,
@@ -32,8 +37,6 @@ import {
     zs1,
     carefour,
     ans,
-    logo
-
 } from "../assets";
 
 export const NavLinks = [
@@ -141,6 +144,14 @@ export const technologies = [
       icon: javascript,
     },
     {
+        name: "sql",
+        icon: sql,
+    },
+    {
+        name: "python",
+        icon: python,
+    },
+    {
       name: "TypeScript",
       icon: typescript,
     },
@@ -176,7 +187,30 @@ export const technologies = [
       name: "laravel",
       icon: laravel,
     },    
-
+    {
+      name: "mongodb",
+      icon: mongodb,
+    },
+    {
+        name: "git",
+        icon: git,
+    },
+    {
+        name: "net",
+        icon: net,
+    },
+    {
+        name: "gimp",
+        icon: gimp,
+    },
+    {
+        name: "office",
+        icon: office,
+    },
+    {
+        name: "unity",
+        icon: unity,
+    }
   ];
 
 export const skills = [
