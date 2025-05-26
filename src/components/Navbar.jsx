@@ -74,10 +74,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={'${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20'}>
-      <div className="navbar w-full flex justify-between items-center max-w-7xl mx-auto m-5 p-4 bg-glass rounded-3xl">
+    <nav className={' w-full flex items-center  fixed top-0 z-20'}>
+      <div className="navbar w-full flex justify-between items-center max-w-7xl mx-auto m-1 p-4 bg-glass rounded-3xl">
         <Link
-          to='/'
+          to='/PortfolioV2/'
           className='flex items-center gap-2'
           onClick={() => {
             setActive('');
@@ -96,12 +96,12 @@ const Navbar = () => {
         {NavLinks.map((link) => (  // Zmienione z links na NavLinks
           <li
             key={link.id}
-            className={`relative text-[18px] font-medium cursor-pointer p-2 ${
+            className={`relative text-[18px] font-medium cursor-pointer m-2 ${
               active === link.title ? "text-white" : "text-[#a8a8a8]"
             }`}
             onClick={() => handleActive(link)}
           >
-            <a href={`#${link.id}`}>{link.title}</a>
+            <a className='block w-full h-full' href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
         <div id="underline" className="underline"></div>
@@ -109,7 +109,8 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         <div className='lg:hidden flex flex-1 justify-end items-center'>
-          <input id="checkbox2" type="checkbox" checked={toggle} />
+          <input id="checkbox2" type="checkbox" checked={toggle} 
+          readOnly/>
           <label className="toggle toggle2" htmlFor="checkbox2" alt="menu"
             onClick={() => setToggle(!toggle)}>
             <div id="bar4" className="bars"></div>
@@ -118,7 +119,7 @@ const Navbar = () => {
           </label>
        
 
-          <div className={`${!toggle ? 'hidden' : 'flex' } p-6 bg-glass absolute top-24 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex' } p-6 bg-black absolute top-24 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4 '>
             {NavLinks.map((link) => (  // Zmienione z links na NavLinks
               <li

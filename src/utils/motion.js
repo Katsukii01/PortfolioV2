@@ -8,7 +8,7 @@ export const textVariant = (delay) => {
         y: 0,
         opacity: 1,
         transition: {
-          type: "spring",
+          type: "tween",
           duration: 1.25,
           delay: delay,
         },
@@ -82,6 +82,27 @@ export const textVariant = (delay) => {
         transition: {
           staggerChildren: staggerChildren,
           delayChildren: delayChildren || 0,
+        },
+      },
+    };
+  };
+
+  export const expandFromBottom = (delay, duration) => {
+    return {
+      hidden: {
+        scale: 0,
+        opacity: 0,
+        y: 100,
+      },
+      show: {
+        y: 0,
+        scale: 1,
+        opacity: 1,
+        transition: {
+          type: "tween",
+          delay: delay,
+          duration: duration,
+          ease: "easeOut",
         },
       },
     };

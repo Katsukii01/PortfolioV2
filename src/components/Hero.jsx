@@ -15,43 +15,42 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className='relative w-full h-screen mx-auto flex flex-col-reverse lg:flex-row justify-center items-center text-center lg:text-left px-4'>
-
-      <div className='lg:w-1/2 flex flex-col justify-center items-start lg:items-end text-left px-16 '>
-        <h1 className='text-6xl font-bold text-white mb-4'>
+    <section className='relative w-full h-screen mx-auto flex flex-col-reverse lg:flex-row justify-center items-center text-center lg:text-left px-4 bg-light-glass'>
+      <div className='lg:w-1/2 flex flex-col justify-center items-start lg:items-end text-left px-24 '>
+        <h1 className='text-2xl  sm:text-4xl md:text-4xl lg:text-6xl  font-bold text-white mb-4 '>
           Hi, I am{' '}
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500'>
+          <span className=''>
             Kacper
           </span>
         </h1>
-        <h2 className='text-3xl md:text-4xl lg:text-6xl border-text'>
+        <h2 className='min-h-[70px] text-2xl  sm:text-4xl md:text-4xl lg:text-6xl border-text bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-950'>
           <Typewriter
             startDelay={1000}
-            cursorColor="#fff"
-            words={['Web Developer', 'Frontend Developer', 'React Enthusiast']}
+            words={['Web designer', 'Frontend Developer', 'React Enthusiast']}
             typeSpeed={70}
             deleteSpeed={35}
             delaySpeed={1500}
             loop={true}
             cursor
             cursorStyle='_'
+            cursorColor='orange'
           />
         </h2>
       </div>
 
-      <div className='lg:w-1/2 flex justify-end items-center lg:justify-start my-5 lg:px-16 xl:px-32 '>
+      <div className='lg:w-1/2 flex  items-center lg:justify-start my-5 lg:px-16 xl:px-32 '>
         <motion.img
           src={pfp}
           alt='Profile'
-          className='w-80 h-80 object-cover rounded-full border-4 border-orange-400 shadow-lg hover:shadow-2xl transition-shadow duration-300'
+          className='sm:w-80 sm:h-80 lg:w-96 lg:h-96  w-60 h-60 object-cover rounded-full border-4 border-cyan shadow-lg hover:shadow-2xl transition-shadow duration-300 '
           initial={{ scale: 1 }}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.2 }}
         />
       </div>
 
-      <div className='absolute bottom-10 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-4 bottom-16 w-full flex justify-center items-center '>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 bg-gradient-to-r from-orange-500 to-yellow-500 flex justify-center items-start p-2'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 bg-gradient-to-r from-cyan-500 to-blue-950 flex justify-center items-start p-2'>
             <motion.div
               animate={{
                 y: [0, 24, 0],

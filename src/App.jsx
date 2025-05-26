@@ -1,21 +1,27 @@
 import { BrowserRouter } from "react-router-dom";
-
-import { Hero, Contact, Experience, Navbar, Skills, Projects, Technologies, About } from "./components";
+import { Hero, Contact, Experience, Navbar, Skills, Projects, Technologies, About, Rain } from "./components";
 
 const App = () => {
   return (
-      <BrowserRouter>
-        <div className="relative z-0 bg-dark">
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-            <Navbar />
-            <Hero />
+    <BrowserRouter>
+        <div className="relative z-0 bg-below-hero">
+          <div className="relative">
+            <div className="background" />
+            <Navbar className="z-20 relative" />
+            <Hero className="z-20 relative" />
           </div>
-        <About />
-        <Technologies/>
-        <Skills />
-        <Projects/>
-        <Experience />
-        <Contact />
+          <div className="glass-bg">
+            <About />
+            <Technologies />
+            <Skills />
+            <Projects />
+            <Experience />
+            {/* Warstwa deszczu */}
+            <Rain />
+          </div>
+          <div className="bg-forest">
+            <Contact />
+          </div>
         </div>
       </BrowserRouter>
   )
