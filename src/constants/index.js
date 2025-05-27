@@ -266,7 +266,7 @@ export const experience = [
     },
     {
         name: "ANS Elbląg",
-        years: "2021 - nowadays",
+        years: "2021 - 2025",
         position: "Student",
         desc: "Currently pursuing a degree in computer science, transitioning from a technical diploma to engineering.",
         type: "Education",
@@ -282,7 +282,7 @@ export const experience = [
     },
     {
         name: "ANS Elbląg",
-        years: "08.2024 - nowadays",
+        years: "08.2024 - 02.2025",
         position: "Intern front-end developer",
         desc: "Focused on front-end development, gaining hands-on experience and working to improve and develop new skills in this area.",
         type: "Internship",

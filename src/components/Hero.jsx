@@ -26,8 +26,8 @@ const Hero = () => {
         <h2 className='min-h-[70px] text-2xl  sm:text-4xl md:text-4xl lg:text-6xl border-text bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-950'>
           <Typewriter
             startDelay={1000}
-            words={['Web designer', 'Frontend Developer', 'React Enthusiast']}
-            typeSpeed={70}
+            words={['Web Developer','IT Engineer','Web designer',]}
+            typeSpeed={80}
             deleteSpeed={35}
             delaySpeed={1500}
             loop={true}

@@ -44,12 +44,14 @@ const Technologies = () => {
       </motion.div>
 
       <div className="w-full h-full pt-6">
-        <div className="w-full mx-auto">
+      <div
+        className="w-full mx-auto rounded-3xl p-8 "
+      >
           {rows.map((row, rowIndex) => (
-            <div
+            <div  
               key={rowIndex}
               className={`flex gap-9 flex-wrap ${
-                rowIndex % 2 === 1 ? 'ml-44 mt-8' : 'mt-8 ml-14'
+                rowIndex % 2 === 1 ? 'ml-28 mt-4' : ' ml-6 mt-4'
               }`}
             >
               {row.map(({ name, icon }) => (
@@ -58,11 +60,12 @@ const Technologies = () => {
                   className="octagon relative"
                   aria-label={name}
                   role="img"
-                  // opcjonalnie:
-                  // onMouseEnter={() => setHoveredTech(name)}
-                  // onMouseLeave={() => setHoveredTech(null)}
                 >
-                  <img src={icon} alt={name} className="h-36 w-36" />
+                  <img src={icon} alt={name} className="h-32 w-32" 
+                    style={{
+                      filter: 'drop-shadow(5px 0px 15px rgb(0, 0, 0))',
+                    }}
+                  />
                 </div>
               ))}
             </div>

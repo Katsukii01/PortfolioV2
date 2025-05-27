@@ -27,49 +27,54 @@ const Contact = () => {
     <motion.div variants={textVariant()} className='w-full h-screen' >
       <motion.div variants={fadeIn('up', 'tween', 0.3, 1.5)} className=' flex flex-col items-center  '>
         
-        <div className='w-3/4 max-w-lg p-8 bg-opacity-90 rounded-lg shadow-lg mt-48 bg-black  border-orange-300  border-2 '>
-          <h2 className='text-2xl font-bold mb-6 text-center text-orange-400'>Contact Me</h2>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <div className='mb-4'>
-              <label htmlFor="name" className='block text-sm font-medium text-orange-100'>Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className='mt-1 block w-full px-3 py-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm'
-                required
-              />
-            </div>
-            <div className='mb-4'>
-              <label htmlFor="email" className='block text-sm font-medium text-orange-100'>Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className='mt-1 block w-full px-3 py-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm'
-                required
-              />
-            </div>
-            <div className='mb-4'>
-              <label htmlFor="message" className='block text-sm font-medium text-orange-100'>Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                className='mt-1 block w-full px-3 py-2 border border-orange-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm'
-                required
-              />
-            </div>
-            <div className='flex items-center justify-center'>
-              <button
-                type="submit"
-                className='px-4 py-2 bg-orange-600 text-white font-semibold rounded-md shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500'
-              >
-                Send
-              </button>
-            </div>
-          </form>
-        </div>
+      <div className="w-3/4 max-w-lg p-8 mt-48 rounded-xl bg-black bg-opacity-40 backdrop-blur-md border border-gray-700 shadow-lg shadow-black/40">
+  <h2 className="text-3xl font-extrabold mb-8 text-center text-gray-200 drop-shadow-sm">Contact Me</h2>
+  <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+    <div>
+      <label htmlFor="name" className="block text-sm font-semibold text-gray-300 mb-1">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        className="w-full px-4 py-2 rounded-md border border-gray-600 bg-gray-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
+        placeholder="Your name"
+        required
+      />
+    </div>
+    <div>
+      <label htmlFor="email" className="block text-sm font-semibold text-gray-300 mb-1">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        className="w-full px-4 py-2 rounded-md border border-gray-600 bg-gray-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
+        placeholder="your.email@example.com"
+        required
+      />
+    </div>
+    <div>
+      <label htmlFor="message" className="block text-sm font-semibold text-gray-300 mb-1">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        className="w-full px-4 py-2 rounded-md border border-gray-600 bg-gray-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
+        placeholder="Your message here..."
+        required
+      />
+    </div>
+    <div className="flex justify-center">
+      <button
+        type="submit"
+        className="px-6 py-3 bg-gray-700 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50 transition"
+      >
+        Send
+      </button>
+    </div>
+  </form>
+</div>
+
+
 
 
         <div className='flex space-x-4 bg'>

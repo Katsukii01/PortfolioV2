@@ -6,6 +6,5 @@ import Skills from "./Skills";
 import Technologies from "./Technologies";
 import About from "./About";
 import Experience from "./Experience";
-import Rain from "./Rain";
 
-export { Contact, Hero, Navbar, Projects, Skills, Technologies, About, Experience, Rain}
+export { Contact, Hero, Navbar, Projects, Skills, Technologies, About, Experience}

@@ -7,10 +7,10 @@ import {useEffect, useState } from 'react';
 
 // Helper function to generate random text colors
 const getRandomColor = () => {
-  const letters = '0123456789ABCDEF';
+  const letters = '6789ABCDEF';
   let color = '#';
   for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+    color += letters[Math.floor(Math.random() * 10)];
   }
   return color;
 };
@@ -66,7 +66,7 @@ const Skills = () => {
                 key={index}
                 className='w-full '
               >
-              <div className='flex items-center justify-center text-center rounded-lg shadow-lg card3D bg-glass mb-10 p-4'
+              <div className='flex items-center justify-center text-center rounded-lg card3D bg-glass mb-10 p-4'
                               style={{
                                 color,
                                 borderBottom: `3px solid ${darkerColor}`,
