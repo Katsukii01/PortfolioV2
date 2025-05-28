@@ -22,6 +22,8 @@ import gimp from "./technologies/gimp.png";
 import office from "./technologies/office.png";
 import unity from "./technologies/unity.png";
 
+
+import p0 from './projects/p0.png';
 import p1 from './projects/p1.png';
 import p2 from './projects/p2.png';
 import p3 from './projects/p3.png';
@@ -39,5 +41,5 @@ import zs1 from './companies/zs1.png';
 import carefour from './companies/carefour.png';
 import ans from './companies/ans.png';
 
-export { logo, pfp, css, git, html, javascript, mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, net, figma, bootstrap, laravel, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, zs1, carefour, ans, sql, python, gimp, office, unity };
+export { logo, pfp, css, git, html, javascript, mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, net, figma, bootstrap, laravel, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, zs1, carefour, ans, sql, python, gimp, office, unity };
 

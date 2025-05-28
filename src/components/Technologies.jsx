@@ -34,8 +34,11 @@ const Technologies = () => {
 
   return (
     <div className="w-full min-h-screen">
-      <motion.div variants={textVariant()}>
-        <h1 className="w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-24 pb-2 mt-4">
+      <motion.div initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.2 }}
+                  variants={textVariant()}>
+      <h1 className='w-full text-6xl font-bold text-[#a8a8a8] pt-16 pb-2 mt-4 break-words'>
           Technologies
         </h1>
       </motion.div>

@@ -59,6 +59,7 @@ const Skills = () => {
             const color = getRandomColor();
             const darkerColor = adjustColor(color, -30);
             const lighterColor = adjustColor(color, 30);
+            const Icon = skill.icon; // komponent ikony
             
             return (
               <motion.div
@@ -66,7 +67,7 @@ const Skills = () => {
                 key={index}
                 className='w-full '
               >
-              <div className='flex items-center justify-center text-center rounded-lg card3D bg-glass mb-10 p-4'
+              <div className='flex flex-col items-center justify-center text-center rounded-lg card3D bg-glass mb-10 p-4'
                               style={{
                                 color,
                                 borderBottom: `3px solid ${darkerColor}`,
@@ -79,6 +80,7 @@ const Skills = () => {
                 <div className='font-bold text-sm md:text-base lg:text-lg'>
                   {skill.desc}
                 </div>
+                <Icon size={36} color={color} />
               </div>
               </motion.div>
             );

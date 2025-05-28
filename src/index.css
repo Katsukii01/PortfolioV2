@@ -132,10 +132,10 @@
 
 .bg-contact {
   background-image: 
-    linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)),
+    linear-gradient(rgba(1, 5, 56, 0.747),rgba(9, 14, 25, 0.6)),
     url('/src/assets/contact/contact.png');
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -343,41 +343,7 @@
     z-index: 10;                    /* żeby było nad tłem */
   }
 
-  /* Deszcz */
-
-  .rain-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 20;
-  }
-  
-  .raindrop {
-    position: absolute;
-    top: -100px;
-    background: rgba(30, 60, 120, 0.4);
-    clip-path: ellipse(20% 38% at 49% 49%);
-    animation-name: rain-fall;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    will-change: transform, opacity;
-    backdrop-filter: blur(10px);    
-    -webkit-backdrop-filter: blur(10px); 
-  }
-  
-  @keyframes rain-fall {
-    0% {
-      transform: translateY(0);
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(620vh);
-      opacity: 0;
-    }
-  }
+ 
   .Container-form {
     transform: skewX(-3deg);
     padding: 1rem;

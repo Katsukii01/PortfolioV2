@@ -24,11 +24,19 @@ const Contact = () => {
   };
 
   return (
-    <motion.div variants={textVariant()} className='w-full h-screen' >
-      <motion.div variants={fadeIn('up', 'tween', 0.3, 1.5)} className=' flex flex-col items-center  '>
-        
-      <div className="w-3/4 max-w-lg p-8 mt-48 rounded-xl bg-black bg-opacity-40 backdrop-blur-md border border-gray-700 shadow-lg shadow-black/40">
-  <h2 className="text-3xl font-extrabold mb-8 text-center text-gray-200 drop-shadow-sm">Contact Me</h2>
+      <div className='w-full min-h-screen'>
+
+
+      <motion.div variants={textVariant()}>
+      <h1 className='w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-16 pb-2'>
+        Contact Me
+        </h1>
+      </motion.div>
+
+
+  <motion.div variants={fadeIn('up', 'tween', 0.3, 1.5)} className=' flex flex-col items-center  '>
+  <>
+  <div className="w-3/4 max-w-lg p-8 mt-12 rounded-xl bg-black bg-opacity-40 backdrop-blur-md border border-gray-700 shadow-lg shadow-black/40">
   <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
     <div>
       <label htmlFor="name" className="block text-sm font-semibold text-gray-300 mb-1">Name</label>
@@ -77,7 +85,7 @@ const Contact = () => {
 
 
 
-        <div className='flex space-x-4 bg'>
+        <div className='flex space-x-4'>
         <div className='flex items-center'>
         <ul className="wrapperlink">
             <a href="https://www.facebook.com/kacperpiotr.kordalski" target='_blank'>
@@ -124,11 +132,11 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-
-
-
-      </motion.div>
+      </>
     </motion.div>
+    </div>
+
+
   );
 };
 

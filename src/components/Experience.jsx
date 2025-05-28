@@ -56,7 +56,7 @@ const Experience = () => {
   return (
     <div className='w-full min-h-screen h-full mb-10'>
       <motion.div variants={textVariant()}>
-        <h1 className='w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-16 pb-2 mt-4'>
+      <h1 className='w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-16 pb-2 mt-4'>
           Experience
         </h1>
       </motion.div>

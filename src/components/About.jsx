@@ -14,7 +14,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: '-50px 0px' });
 
   return (
-    <div ref={ref} className='relative w-full min-h-screen mx-auto flex flex-col md:flex-row md:justify-between top-32 pb-14'>
+    <div ref={ref} className='w-full min-h-screen'>
       <motion.div
         variants={fadeIn('right', 'tween', 0.1, 1)}
         className='w-full  px-12'
