@@ -77,7 +77,7 @@ const Navbar = () => {
     <nav className={' w-full flex items-center  fixed top-0 z-20'}>
       <div className="navbar w-full flex justify-between items-center max-w-7xl mx-auto m-1 p-4 bg-glass rounded-3xl">
         <Link
-          to='/PortfolioV2/'
+          to='/'
           className='flex items-center gap-2'
           onClick={() => {
             setActive('');

@@ -216,11 +216,11 @@ export const technologies = [
 export const skills = [
 {
     id: 1,
-    desc: "OWNS A DRIVERS LICENSE",
+    desc: "PROBLEM-SOLVING",
 },
 {
     id: 2,
-    desc: "FAST LEARNING PROBLEM SOLVING",
+    desc: "FAST LEARNER",
 },
 {
     id: 3,
@@ -236,19 +236,19 @@ export const skills = [
 },
 {
     id: 6,
-    desc: "DATABASES I WOREKD WITH (FIREBASE, MONGODB, ORACLE, MYSQL, ACCESS)",
+    desc: "OWNS A DRIVERS LICENSE",
 },
 {
     id: 7,
-    desc: "BASIC KNOWLEDGE OF LANGUAGES (JAVA, C, C#, PYTHON)",
+    desc: "TEAMWORK",
 },
 {
     id: 8,
-    desc: "SOME PROGRAMS I CAN WORK WITH(MS OFFICE, GIMP/PHOTOSHOP, UNITY, AXURE RP, BLENDER)",
+    desc: "ADAPTABILITY",
 },
 {
     id: 9,
-    desc: "CERTIFICATES AND COURSES (SISCO IT essentials, Cyber.MIL academy - cyber seciurity course, ERD Course, RedHat academy(RH124, RH134, RH294))",
+    desc: "HARDWORKING",
 }
 
 

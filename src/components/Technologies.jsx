@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { SectionWrapper } from '../wrapper';
 import { technologies } from '../constants';
 import { motion } from 'framer-motion';
-import { textVariant } from '../utils/motion';
+import { textVariant, fadeIn } from '../utils/motion';
 
 // Funkcja do podziału na rzędy po n elementów
 function chunkArray(arr, size) {
@@ -15,25 +15,22 @@ function chunkArray(arr, size) {
 
 const Technologies = () => {
   const [rowSize, setRowSize] = useState(5);
-  const [rows, setRows] = useState(chunkArray(technologies, 5));
 
   useEffect(() => {
     function handleResize() {
       const width = window.innerWidth;
-      let calculatedRowSize = Math.floor((width /321));
+      let calculatedRowSize = Math.floor(width / 321);
       if (calculatedRowSize < 1) calculatedRowSize = 1;
       if (calculatedRowSize > 5) calculatedRowSize = 5;
-      if (calculatedRowSize !== rowSize) {
-        setRowSize(calculatedRowSize);
-        setRows(chunkArray(technologies, calculatedRowSize));
-      }
+      setRowSize(calculatedRowSize);
     }
 
-    handleResize(); // ustaw na start
-
+    handleResize(); // Initial call
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [rowSize]);
+  }, []);
+
+  const rows = chunkArray(technologies, rowSize);
 
   return (
     <div className="w-full min-h-screen">
@@ -44,29 +41,33 @@ const Technologies = () => {
       </motion.div>
 
       <div className="w-full h-full pt-6">
-      <div
-        className="w-full mx-auto rounded-3xl p-8 "
-      >
+        <div className="w-full mx-auto rounded-3xl p-8">
           {rows.map((row, rowIndex) => (
-            <div  
+            <div
               key={rowIndex}
               className={`flex gap-9 flex-wrap ${
-                rowIndex % 2 === 1 ? 'ml-28 mt-4' : ' ml-6 mt-4'
+                rowIndex % 2 === 1 ? 'ml-28 mt-4' : 'ml-6 mt-4'
               }`}
             >
-              {row.map(({ name, icon }) => (
-                <div
+              {row.map(({ name, icon }, index) => (
+                <motion.div
+                  variants={fadeIn('left', 'spring', rowIndex * 0.1 + index * 0.4, 0.5)}
                   key={name}
-                  className="octagon relative"
-                  aria-label={name}
-                  role="img"
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.02 }}
                 >
-                  <img src={icon} alt={name} className="h-32 w-32" 
-                    style={{
-                      filter: 'drop-shadow(5px 0px 15px rgb(0, 0, 0))',
-                    }}
-                  />
-                </div>
+                  <div className="octagon relative" role="img">
+                    <img
+                      src={icon}
+                      alt={name}
+                      className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32"
+                      style={{
+                        filter: 'drop-shadow(5px 0px 15px rgb(0, 0, 0))',
+                      }}
+                    />
+                  </div>
+                </motion.div>
               ))}
             </div>
           ))}

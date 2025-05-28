@@ -11,7 +11,7 @@ const App = () => {
             <Hero className="z-20 relative" />
             </div>
             <div className="bg-glass">
-              <div className=" bg-below-hero">
+              <div className="bg-below-hero">
                 <About />
                 <Technologies />
                 <Skills />
