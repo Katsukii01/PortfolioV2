@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { textVariant } from "../utils/motion";
 import { techIcons } from "./iconsMap"; 
+import { FaArrowRight } from "react-icons/fa";
 
 const sliderSettings = {
   dots: true,
@@ -66,16 +67,26 @@ const Projects = () => {
                       </span>
                     ))}
                 </div>
-                <div className="flex justify-between items-center mt-4">
-                  <a href={project.linkGithub} target="_blank" className="btn btn-sm flex items-center gap-1 border-2 border-black text-white bg-black/30 px-3 py-1 rounded-lg hover:bg-black hover:border-white">
-                    <FaGithub /> GitHub
-                  </a>
-                  {project.linkLiveSite && (
-                    <a href={project.linkLiveSite} target="_blank" className="btn btn-sm flex items-center gap-1 border-2 border-blue-500 text-white bg-blue-500 px-3 py-1 rounded-lg hover:bg-blue-800 hover:border-white">
-                      <FaGlobe /> Web
+                
+                  <div className="flex justify-evenly items-center mt-4">
+                    <a
+                      href={project.linkGithub}
+                      target="_blank"
+                      className="group btn btn-sm flex items-center gap-1 border-2 border-black text-white bg-black/30 px-3 py-1 rounded-lg hover:bg-black hover:border-white"
+                    >
+                      <FaGithub /> GitHub <FaArrowRight className="transition-transform duration-200 group-hover:translate-x-1" />
                     </a>
-                  )}
-                </div>
+                    {project.linkLiveSite && (
+                      <a
+                        href={project.linkLiveSite}
+                        target="_blank"
+                        className="group btn btn-sm flex items-center gap-1 border-2 border-blue-500 text-white bg-blue-500 px-3 py-1 rounded-lg hover:bg-blue-800 hover:border-white"
+                      >
+                        <FaGlobe /> Web <FaArrowRight className="transition-transform duration-200 group-hover:translate-x-1" />
+                      </a>
+                    )}
+                  </div>
+
               </div>
             </div>
           ))}
