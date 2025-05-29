@@ -26,7 +26,7 @@ const Hero = () => {
         <h2 className='min-h-[70px] text-2xl  sm:text-4xl md:text-4xl lg:text-6xl border-text bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-950'>
           <Typewriter
             startDelay={1000}
-            words={['Web Developer','IT Engineer','Web designer',]}
+            words={['Fullstack Developer', 'Web Developer', 'IT Expert']}
             typeSpeed={80}
             deleteSpeed={35}
             delaySpeed={1500}
@@ -44,7 +44,7 @@ const Hero = () => {
           alt='Profile'
           className='sm:w-80 sm:h-80 lg:w-96 lg:h-96  w-60 h-60 object-cover rounded-full border-4 border-cyan shadow-lg hover:shadow-2xl transition-shadow duration-300 '
           initial={{ scale: 1 }}
-          whileHover={{ scale: 1.2 }}
+          whileHover={{ scale: 1.1 }}
         />
       </div>
 

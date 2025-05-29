@@ -72,110 +72,181 @@ export const NavLinks = [
 ];
 
 export const projects = [
-    {
-      name: "RecruitHelper – AI-Powered Recruitment Platform",
-      description: "An AI-enhanced platform streamlining candidate matching and recruitment process.",
-      image: p0,
-      technologies: ["React", "OpenAI API", "Tailwind CSS", "Python", "Firebase", "Fast API", "LLM"],
-      linkGithub: "https://github.com/Katsukii01/Shop_in_NextJs",
-      linkLiveSite: "https://recruit-helper.netlify.app/"
-    },
-    {
-      name: "Next.js E-commerce Shop",
-      description: "Fully functional online store built with Next.js and Stripe integration.",
-      image: p1,
-      technologies: ["Next.js", "Stripe", "Tailwind CSS", "TypeScript", "Clerk", "MongoDB"],
-      linkGithub: "https://github.com/Katsukii01/Shop_in_NextJs",
-      linkLiveSite: ""
-    },
-    {
-      name: "Laravel Streaming Service",
-      description: "Platform for watching cartoons, including authentication and video hosting.",
-      image: p2,
-      technologies: ["Laravel","MySQL", "Bootstrap"],
-      linkGithub: "https://github.com/Katsukii01/Website_to_watch_cartoons_Laravel",
-      linkLiveSite: ""
-    },
-    {
-      name: "BMI Calculator – C# WinForms",
-      description: "Simple desktop app to calculate BMI with real-time feedback and health ranges.",
-      image: p3,
-      technologies: ["C#", ".NET", "WinForms"],
-      linkGithub: "https://github.com/Katsukii01/BMI_Calculator_C-_WinForms",
-      linkLiveSite: ""
-    },
-    {
-      name: "Laravel Gaming Hub with Multiplayer",
-      description: "Gaming portal with user accounts, real-time multiplayer games, and leaderboard.",
-      image: p4,
-      technologies: ["Laravel", "WebSockets", "MySQL", "Firebase", "Bootstrap"],
-      linkGithub: "https://github.com/Katsukii01/GameHub",
-      linkLiveSite: ""
-    },
-    {
-      name: "Android Remote Car Controller App",
-      description: "Mobile app allowing remote control of a car prototype via Bluetooth.",
-      image: p5,
-      technologies: ["Java", "Android Studio", "Bluetooth", "STM32 MCU",],
-      linkGithub: "https://github.com/Katsukii01/Car_controlled_with_app",
-      linkLiveSite: ""
-    },
-    {
-      name: "Python Image Person Recognizer",
-      description: "ML-based tool for detecting and recognizing persons in static images.",
-      image: p6,
-      technologies: ["Python", "OpenCV", "TensorFlow", "Json"],
-      linkGithub: "https://github.com/Katsukii01/Tracking_Persons_Python",
-      linkLiveSite: ""
-    },
-    {
-      name: "Anime Face Detector AI Model",
-      description: "Neural network model for detecting anime faces in image datasets.",
-      image: p7,
-      technologies: ["Python", "TensorFlow", "Keras"],
-      linkGithub: "https://github.com/Katsukii01/AnimeFaces-AI-model",
-      linkLiveSite: ""
-    },
-    {
-      name: "ASP.NET Streaming Service",
-      description: "Modern streaming site with ASP.NET backend and media playback features.",
-      image: p8,
-      technologies: ["ASP.NET", "C#", "Entity Framework", "Bootstrap", "MySQL"],
-      linkGithub: "https://github.com/Katsukii01/Anime-Hub-ASP-NET",
-      linkLiveSite: ""
-    },
-    {
-      name: "Escape Horror Game – Unity 3D",
-      description: "Immersive 3D horror game with puzzles and atmospheric tension.",
-      image: p9,
-      technologies: ["Unity3D", "C#", "Blender", "Gimp"],
-      linkGithub: "https://github.com/Katsukii01/EspcapeFromAnsTheGame",
-      linkLiveSite: ""
-    },
-    {
-      name: "ANS AI Demo – React + Three.js",
-      description: "Interactive 3D AI demonstration using WebGL and voice recognition.",
-      image: p10,
-      technologies: ["React", "Three.js", "OpenAI API", "Tailwind CSS", "Fast API", "Python"],
-      linkGithub: "https://github.com/Katsukii01/ANS-AI-DEMO",
-      linkLiveSite: "https://ans-ai.netlify.app/"
-    },
-    {
-      name: "3D Developer Portfolio",
-      description: "Personal portfolio built in 3D with animations and project showcase.",
-      image: p11,
-      technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS"],
-      linkGithub: "https://github.com/Katsukii01/3D-Portfolio",
-      linkLiveSite: ""
-    },
-    {
-      name: "User Management System – Redux",
-      description: "Admin panel to manage users with filters, pagination, and mock API.",
-      image: p12,
-      technologies: ["React", "Redux Toolkit", "TypeScript", "Tailwind CSS"],
-      linkGithub: "https://github.com/Katsukii01/user-managment-raw-code",
-      linkLiveSite: "https://katsukii01.github.io/user-management/"
-    }
+  {
+    name: "RecruitHelper – AI-Powered Recruitment Platform",
+    description: "An AI-enhanced platform streamlining candidate matching and recruitment process.",
+    image: p0,
+    technologies: [
+      { name: "React", color: "#61DBFB" },
+      { name: "OpenAI API", color: "#10A37F" },
+      { name: "Tailwind CSS", color: "#38BDF8" },
+      { name: "Python", color: "#3776AB" },
+      { name: "Firebase", color: "#FFCA28" },
+      { name: "Fast API", color: "#009688" },
+      { name: "LLM", color: "#6B7280" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/RecruitHelper",
+    linkLiveSite: "https://recruit-helper.netlify.app/"
+  },
+  {
+    name: "Next.js E-commerce Shop",
+    description: "Fully functional online store built with Next.js and Stripe integration.",
+    image: p1,
+    technologies: [
+      { name: "Next.js", color: "#000000" },
+      { name: "Stripe", color: "#635BFF" },
+      { name: "Tailwind CSS", color: "#38BDF8" },
+      { name: "TypeScript", color: "#3178C6" },
+      { name: "Clerk", color: "#3F3F46" },
+      { name: "MongoDB", color: "#47A248" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/Shop_in_NextJs",
+    linkLiveSite: ""
+  },
+  {
+    name: "Laravel Streaming Service",
+    description: "Platform for watching cartoons, including authentication and video hosting.",
+    image: p2,
+    technologies: [
+      { name: "Laravel", color: "#FF2D20" },
+      { name: "MySQL", color: "#00758F" },
+      { name: "Bootstrap", color: "#7952B3" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/Website_to_watch_cartoons_Laravel",
+    linkLiveSite: ""
+  },
+  {
+    name: "BMI Calculator – C# WinForms",
+    description: "Simple desktop app to calculate BMI with real-time feedback and health ranges.",
+    image: p3,
+    technologies: [
+      { name: "C#", color: "#9B4F96" },
+      { name: ".NET", color: "#512BD4" },
+      { name: "WinForms", color: "#2C4F7C" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/BMI_Calculator_C-_WinForms",
+    linkLiveSite: ""
+  },
+  {
+    name: "Laravel Gaming Hub with Multiplayer",
+    description: "Gaming portal with user accounts, real-time multiplayer games, and leaderboard.",
+    image: p4,
+    technologies: [
+      { name: "Laravel", color: "#FF2D20" },
+      { name: "WebSockets", color: "#7952B3" },
+      { name: "MySQL", color: "#00758F" },
+      { name: "Firebase", color: "#FFCA28" },
+      { name: "Bootstrap", color: "#7952B3" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/GameHub",
+    linkLiveSite: ""
+  },
+  {
+    name: "Android Remote Car Controller App",
+    description: "Mobile app allowing remote control of a car prototype via Bluetooth.",
+    image: p5,
+    technologies: [
+      { name: "Java", color: "#007396" },
+      { name: "Android Studio", color: "#3DDC84" },
+      { name: "Bluetooth", color: "#0082FC" },
+      { name: "STM32 MCU", color: "#0F1E5A" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/Car_controlled_with_app",
+    linkLiveSite: ""
+  },
+  {
+    name: "Python Image Person Recognizer",
+    description: "ML-based tool for detecting and recognizing persons in static images.",
+    image: p6,
+    technologies: [
+      { name: "Python", color: "#3776AB" },
+      { name: "OpenCV", color: "#5C3EE8" },
+      { name: "TensorFlow", color: "#FF6F00" },
+      { name: "Json", color: "#292929" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/Tracking_Persons_Python",
+    linkLiveSite: ""
+  },
+   {
+    name: "Anime Face Detector AI Model",
+    description: "Neural network model for detecting anime faces in image datasets.",
+    image: p7,
+    technologies: [
+      { name: "Python", color: "#3776AB" },
+      { name: "TensorFlow", color: "#FF6F00" },
+      { name: "Keras", color: "#D00000" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/AnimeFaces-AI-model",
+    linkLiveSite: ""
+  },
+  {
+    name: "ASP.NET Streaming Service",
+    description: "Modern streaming site with ASP.NET backend and media playback features.",
+    image: p8,
+    technologies: [
+      { name: "ASP.NET", color: "#512BD4" },
+      { name: "C#", color: "#9B4F96" },
+      { name: "Entity Framework", color: "#107C10" },
+      { name: "Bootstrap", color: "#7952B3" },
+      { name: "MySQL", color: "#00758F" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/Anime-Hub-ASP-NET",
+    linkLiveSite: ""
+  },
+  {
+    name: "Escape Horror Game – Unity 3D",
+    description: "Immersive 3D horror game with puzzles and atmospheric tension.",
+    image: p9,
+    technologies: [
+      { name: "Unity3D", color: "#000000" },
+      { name: "C#", color: "#9B4F96" },
+      { name: "Blender", color: "#F5792A" },
+      { name: "Gimp", color: "#545454" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/EspcapeFromAnsTheGame",
+    linkLiveSite: ""
+  },
+  {
+    name: "ANS AI Demo – React + Three.js",
+    description: "Interactive 3D AI demonstration using WebGL and voice recognition.",
+    image: p10,
+    technologies: [
+      { name: "React", color: "#61DBFB" },
+      { name: "Three.js", color: "#000000" },
+      { name: "OpenAI API", color: "#10A37F" },
+      { name: "Tailwind CSS", color: "#38BDF8" },
+      { name: "Fast API", color: "#009688" },
+      { name: "Python", color: "#3776AB" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/ANS-AI-DEMO",
+    linkLiveSite: "https://ans-ai.netlify.app/"
+  },
+  {
+    name: "3D Developer Portfolio",
+    description: "Personal portfolio built in 3D with animations and project showcase.",
+    image: p11,
+    technologies: [
+      { name: "React", color: "#61DBFB" },
+      { name: "Three.js", color: "#000000" },
+      { name: "Framer Motion", color: "#0055FF" },
+      { name: "Tailwind CSS", color: "#38BDF8" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/3D-Portfolio",
+    linkLiveSite: ""
+  },
+  {
+    name: "User Management System – Redux",
+    description: "Admin panel to manage users with filters, pagination, and mock API.",
+    image: p12,
+    technologies: [
+      { name: "React", color: "#61DBFB" },
+      { name: "Redux Toolkit", color: "#764ABC" },
+      { name: "TypeScript", color: "#3178C6" },
+      { name: "Tailwind CSS", color: "#38BDF8" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/user-managment-raw-code",
+    linkLiveSite: "https://katsukii01.github.io/user-management/"
+  }
   ];
   
 

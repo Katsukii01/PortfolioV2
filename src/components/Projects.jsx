@@ -18,8 +18,14 @@ const sliderSettings = {
   autoplaySpeed: 1500,
   arrows: true,
   responsive: [
+      {
+      breakpoint: 1238,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
     {
-      breakpoint: 768,
+      breakpoint: 825,
       settings: {
         slidesToShow: 1,
         arrows: false,
@@ -42,20 +48,23 @@ const Projects = () => {
           <Slider {...sliderSettings}>
           {projects.map((project, index) => (
             <div key={index} className="px-2 h-[500px]">
-              <div className=" bg-neutral-950 rounded-xl p-4 h-[450px] flex flex-col justify-between shadow-md ">
-                <img src={project.image} className="rounded-lg h-48 w-full object-cover" />
+              <div className=" bg-neutral-950 rounded-xl p-4 h-[450px] flex flex-col justify-between shadow-md border-2 border-neutral-800">
+                <div className="h-48">
+                  <img src={project.image} className="rounded-lg h-48 w-full object-cover" />
+                </div>
                 <h3 className="text-xl font-bold text-white mt-3">{project.name}</h3>
                 <p className="text-sm text-gray-300 mt-2">{project.description}</p>
                 <div className="flex flex-wrap gap-1 mt-3">
-                  {project.technologies.map((tech, i) => (
-                              <span
-                              key={i}
-                              className="bg-white/10 px-2 py-1 rounded text-xs text-white flex items-center gap-1"
-                            >
-                              {techIcons[tech] ? techIcons[tech]() : <span>🔧</span>}
-                              {tech}
-                            </span>
-                  ))}
+                    {project.technologies.map(({ name, color }, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 rounded text-xs text-white flex items-center gap-1"
+                        style={{ backgroundColor: color + 'cc' }} // 'cc' to przezroczystość ~80%
+                      >
+                        {techIcons[name] ? techIcons[name]() : <span>🔧</span>}
+                        {name}
+                      </span>
+                    ))}
                 </div>
                 <div className="flex justify-between items-center mt-4">
                   <a href={project.linkGithub} target="_blank" className="btn btn-sm flex items-center gap-1 border-2 border-black text-white bg-black/30 px-3 py-1 rounded-lg hover:bg-black hover:border-white">

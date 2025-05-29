@@ -1,36 +1,68 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="891.000000pt" height="893.000000pt" viewBox="0 0 891.000000 893.000000"
- preserveAspectRatio="xMidYMid meet">
+<svg
+  width="140"
+  height="140"
+  viewBox="0 0 140 140"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <filter id="glassBlur" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#0a1f44" flood-opacity="0.4" result="flood"/>
+      <feComposite in="flood" in2="BackgroundImageFix" operator="in" result="mask"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="blur" in2="mask" operator="in" result="blurredMask"/>
+      <feBlend in="SourceGraphic" in2="blurredMask" mode="normal"/>
+    </filter>
+  </defs>
 
-<g transform="translate(0.000000,893.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M0 6697 c1 -1315 5 -2275 10 -2337 6 -68 6 -108 0 -114 -7 -7 -10
--762 -10 -2128 l0 -2118 4455 0 4455 0 0 2356 c0 1604 -3 2361 -10 2375 -7 13
--7 19 0 19 7 0 10 656 10 2090 l0 2090 -4455 0 -4455 0 0 -2233z m5931 1985
-c-7 -2 -18 1 -23 6 -8 8 -4 9 13 5 13 -4 18 -8 10 -11z m609 -268 c0 -2 -9 0
--20 6 -11 6 -20 13 -20 16 0 2 9 0 20 -6 11 -6 20 -13 20 -16z m-4165 -2 c-23
--20 -85 -53 -85 -45 0 5 19 19 43 30 47 24 56 27 42 15z m5539 -1127 c12 -20
-3 -13 -27 20 -26 28 -46 55 -47 60 0 13 52 -43 74 -80z m-7408 -771 c-4 -9 -9
--15 -11 -12 -3 3 -3 13 1 22 4 9 9 15 11 12 3 -3 3 -13 -1 -22z m-26 -42 c-7
--13 -9 -8 -9 23 0 35 1 37 10 17 6 -15 5 -30 -1 -40z m2660 -648 c0 -379 4
--594 10 -592 10 3 48 59 408 593 316 469 384 569 396 583 9 9 101 12 419 10
-l408 -3 -98 -142 c-93 -135 -211 -307 -660 -963 -107 -157 -197 -290 -200
--297 -3 -7 11 -38 30 -70 19 -32 121 -204 227 -383 106 -179 261 -440 345
--580 132 -222 410 -691 422 -712 2 -5 -184 -8 -414 -8 l-419 0 -249 438 c-137
-240 -285 501 -329 579 -45 79 -83 143 -86 142 -3 0 -51 -57 -107 -126 l-103
--127 0 -453 0 -453 -365 0 -365 0 0 1573 c0 866 3 1577 7 1580 3 4 168 7 365
-7 l358 0 0 -596z m5488 211 c-3 -3 -9 2 -12 12 -6 14 -5 15 5 6 7 -7 10 -15 7
--18z m222 -795 c0 -13 -1 -13 -10 0 -5 8 -10 22 -10 30 0 13 1 13 10 0 5 -8
-10 -22 10 -30z m10 -53 c0 -5 -4 -5 -10 -2 -5 3 -10 14 -10 23 0 15 2 15 10 2
-5 -8 10 -19 10 -23z m27 -1209 c-3 -7 -5 -2 -5 12 0 14 2 19 5 13 2 -7 2 -19
-0 -25z m-10 -75 c-3 -10 -5 -4 -5 12 0 17 2 24 5 18 2 -7 2 -21 0 -30z m-1107
--2426 c0 -2 -15 -16 -32 -33 l-33 -29 29 33 c28 30 36 37 36 29z m-450 -430
-c0 -2 -10 -12 -22 -23 l-23 -19 19 23 c18 21 26 27 26 19z m-4872 -563 c18 -8
-32 -18 32 -20 0 -9 -44 8 -58 22 -17 18 -12 18 26 -2z m448 -199 c32 -14 47
--24 33 -21 -31 7 -99 35 -99 41 0 8 2 7 66 -20z m2127 -252 c-7 -2 -19 -2 -25
-0 -7 3 -2 5 12 5 14 0 19 -2 13 -5z"/>
-</g>
+  <!-- Background circle -->
+  <circle
+    cx="70"
+    cy="70"
+    r="65"
+    fill="rgba(10, 31, 68, 0.6)"
+    stroke="rgba(40, 70, 130, 0.8)"
+    stroke-width="5"
+    filter="url(#glassBlur)"
+  />
+
+  <!-- "<" symbol -->
+  <path
+    d="M50 85 L35 70 L50 55"
+    stroke="#3B82F6"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- Letter K -->
+  <text
+    x="70"
+    y="80"
+    text-anchor="middle"
+    font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    font-weight="700"
+    font-size="48"
+    fill="#93C5FD"
+    style="filter: drop-shadow(0 0 1.5px #3B82F6); user-select: none;"
+  >
+    K
+  </text>
+
+  <!-- "/>" symbol -->
+  <path
+    d="M90 55 L105 70 L90 85"
+    stroke="#3B82F6"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <path
+    d="M105 55 L105 85"
+    stroke="#60A5FA"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
 </svg>
