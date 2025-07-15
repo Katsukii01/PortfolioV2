@@ -5,8 +5,10 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import { textVariant } from '../utils/motion';
+import { useTranslation } from 'react-i18next';
 
 const ExperienceCard = ({ experience }) => {
+  const { t } = useTranslation();
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -40,12 +42,12 @@ const ExperienceCard = ({ experience }) => {
       <div>
         <h3 className='text-[24px] font-bold text-white'>{experience.name}</h3>
         <p className='text-[16px] font-medium text-[#a8a8a8] mt-1'>
-          {experience.position}
+          {t(experience.position)}
         </p>
       </div>
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
-          {experience.desc}
+          {t(experience.desc)}
         </li>
       </ul>
     </VerticalTimelineElement>
@@ -53,11 +55,12 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <div className='w-full min-h-screen h-full mb-10'>
       <motion.div variants={textVariant()}>
       <h1 className='w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-16 pb-2 mt-4'>
-          Experience
+          {t('Experience')}
         </h1>
       </motion.div>
       <div className='mt-20 flex flex-col items-center'>

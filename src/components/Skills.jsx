@@ -4,6 +4,7 @@ import { skills } from '../constants';
 import { motion } from 'framer-motion';
 import { textVariant, fadeIn } from '../utils/motion';
 import {useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Helper function to generate random text colors
 const getRandomColor = () => {
@@ -30,6 +31,7 @@ const adjustColor = (color, factor) => {
 };
 
 const Skills = () => {
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -50,7 +52,7 @@ const Skills = () => {
     <>
       <motion.div variants={textVariant()}>
       <h1 className='w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-16 pb-2 mt-4'>
-        Skills
+        {t('Skills')}
       </h1>
       </motion.div>
       <div className='relative w-full h-full  min-h-screen  flex flex-col items-center px-4'>
@@ -78,7 +80,7 @@ const Skills = () => {
                               }}
               >
                 <div className='font-bold text-sm md:text-base lg:text-lg'>
-                  {skill.desc}
+                  {t(skill.desc)}
                 </div>
                 <Icon size={36} color={color} />
               </div>

@@ -247,7 +247,7 @@ export const projects = [
     linkLiveSite: ""
   },
   {
-    name: "User Management System – Redux",
+    name: "User Management System",
     description: "Admin panel to manage users with filters, pagination, and mock API.",
     image: p12,
     technologies: [
@@ -406,7 +406,7 @@ export const experience = [
         name: "ANS Elbląg",
         years: "2021 - 2025",
         position: "Student",
-        desc: "Currently pursuing a degree in computer science, transitioning from a technical diploma to engineering.",
+        desc: "Completed a Bachelor of Engineering degree in Computer Science with a specialization in Database Design and Application Software, graduating with a final grade of 5.0 (excellent).",
         type: "Education",
         logo: ans
     },

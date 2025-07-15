@@ -3,8 +3,10 @@ import emailjs from '@emailjs/browser';
 import { SectionWrapper } from '../wrapper';
 import { motion } from 'framer-motion';
 import { fadeIn , textVariant} from '../utils/motion';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef(null);
 
   const handleSubmit = (e) => {
@@ -29,7 +31,7 @@ const Contact = () => {
 
       <motion.div variants={textVariant()}>
       <h1 className='w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-16 pb-2'>
-        Contact Me
+          {t('Contact')}
         </h1>
       </motion.div>
 
@@ -39,35 +41,35 @@ const Contact = () => {
   <div className="w-3/4 max-w-lg p-8 mt-12 rounded-xl bg-black bg-opacity-40 backdrop-blur-md border border-gray-700 shadow-lg shadow-black/40">
   <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
     <div>
-      <label htmlFor="name" className="block text-sm font-semibold text-gray-300 mb-1">Name</label>
+      <label htmlFor="name" className="block text-sm font-semibold text-gray-300 mb-1">{t('Name')}</label>
       <input
         type="text"
         id="name"
         name="name"
         className="w-full px-4 py-2 rounded-md border border-gray-600 bg-gray-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
-        placeholder="Your name"
+        placeholder={t('Your name')}
         required
       />
     </div>
     <div>
-      <label htmlFor="email" className="block text-sm font-semibold text-gray-300 mb-1">Email</label>
+      <label htmlFor="email" className="block text-sm font-semibold text-gray-300 mb-1">{t('Email')}</label>
       <input
         type="email"
         id="email"
         name="email"
         className="w-full px-4 py-2 rounded-md border border-gray-600 bg-gray-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
-        placeholder="your.email@example.com"
+        placeholder={t('Your email')}
         required
       />
     </div>
     <div>
-      <label htmlFor="message" className="block text-sm font-semibold text-gray-300 mb-1">Message</label>
+      <label htmlFor="message" className="block text-sm font-semibold text-gray-300 mb-1">{t('Message')}</label>
       <textarea
         id="message"
         name="message"
         rows="5"
         className="w-full px-4 py-2 rounded-md border border-gray-600 bg-gray-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
-        placeholder="Your message here..."
+        placeholder={t('Your message here...')}
         required
       />
     </div>
@@ -76,7 +78,7 @@ const Contact = () => {
         type="submit"
         className="px-6 py-3 bg-gray-700 text-gray-100 font-semibold rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50 transition"
       >
-        Send
+        {t('Send')}
       </button>
     </div>
   </form>

@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion';
 import { pfp } from '../assets';  // Sprawdź, czy ścieżka jest prawidłowa
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
+  const { t } = useTranslation();
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,7 +20,7 @@ const Hero = () => {
     <section className='relative w-full h-screen mx-auto flex flex-col-reverse lg:flex-row justify-center items-center text-center lg:text-left px-4 bg-light-glass'>
       <div className='lg:w-1/2 flex flex-col justify-center items-start lg:items-end text-left px-24 '>
         <h1 className='text-2xl  sm:text-4xl md:text-4xl lg:text-6xl  font-bold text-white mb-4 '>
-          Hi, I am{' '}
+          {t('hi')}{' '}
           <span className=''>
             Kacper
           </span>
@@ -26,7 +28,7 @@ const Hero = () => {
         <h2 className='min-h-[70px] text-2xl  sm:text-4xl md:text-4xl lg:text-6xl border-text bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-950'>
           <Typewriter
             startDelay={1000}
-            words={['Fullstack Developer', 'Web Developer', 'IT Expert']}
+            words={['Fullstack Developer', 'Web Developer', t('itexp')]}
             typeSpeed={80}
             deleteSpeed={35}
             delaySpeed={1500}

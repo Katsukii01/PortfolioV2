@@ -3,8 +3,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 // Importowanie tłumaczeń
-import enTranslation from './translations/en.json';
-import plTranslation from './translations/pl.json';
+import enTranslation from '/src/assets/translations/en.json';
+import plTranslation from '/src/assets/translations/pl.json';
 
 i18n
   .use(initReactI18next) // Podłączamy i18next do Reacta

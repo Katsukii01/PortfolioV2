@@ -3,9 +3,11 @@ import { SectionWrapper } from '../wrapper';
 import { technologies } from '../constants';
 import { motion } from 'framer-motion';
 import { textVariant, fadeIn } from '../utils/motion';
+import { useTranslation } from 'react-i18next';
 
 // Funkcja do podziału na rzędy po n elementów
 function chunkArray(arr, size) {
+  
   const result = [];
   for (let i = 0; i < arr.length; i += size) {
     result.push(arr.slice(i, i + size));
@@ -14,6 +16,7 @@ function chunkArray(arr, size) {
 }
 
 const Technologies = () => {
+  const { t } = useTranslation();
   const [rowSize, setRowSize] = useState(5);
 
   useEffect(() => {
@@ -39,7 +42,7 @@ const Technologies = () => {
                   viewport={{ once: true, amount: 0.2 }}
                   variants={textVariant()}>
       <h1 className='w-full text-6xl font-bold text-[#a8a8a8] pt-16 pb-2 mt-4 break-words'>
-          Technologies
+          {t('Technologies')}
         </h1>
       </motion.div>
 

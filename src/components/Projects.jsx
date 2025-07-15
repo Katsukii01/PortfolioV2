@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { textVariant } from "../utils/motion";
 import { techIcons } from "./iconsMap"; 
 import { FaArrowRight } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 const sliderSettings = {
   dots: true,
@@ -37,12 +38,13 @@ const sliderSettings = {
 };
 
 const Projects = () => {
+  const { t } = useTranslation();
 
   return (
     <section className="relative w-11/12 mx-auto min-h-screen">
             <motion.div variants={textVariant()} className="mb-12">
             <h1 className='w-full lg:w-1/2 text-6xl font-bold text-[#a8a8a8] pt-16 pb-2 mt-4'>
-              Projects
+               {t('Projects')}
             </h1>
             </motion.div>
 
@@ -53,8 +55,8 @@ const Projects = () => {
                 <div className="h-48">
                   <img src={project.image} className="rounded-lg h-48 w-full object-cover" />
                 </div>
-                <h3 className="text-xl font-bold text-white mt-3">{project.name}</h3>
-                <p className="text-sm text-gray-300 mt-2">{project.description}</p>
+                <h3 className="text-xl font-bold text-white mt-3">{t(project.name)}</h3>
+                <p className="text-sm text-gray-300 mt-2">{t(project.description)}</p>
                 <div className="flex flex-wrap gap-1 mt-3">
                     {project.technologies.map(({ name, color }, i) => (
                       <span

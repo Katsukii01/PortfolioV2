@@ -31,6 +31,7 @@
     "react-tilt": "^1.0.2",
     "react-typewriter-effect": "^1.1.0",
     "react-vertical-timeline-component": "^3.6.0",
+    "react-world-flags": "^1.6.0",
     "slick-carousel": "^1.8.1",
     "three": "^0.168.0"
   },
