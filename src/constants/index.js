@@ -20,6 +20,7 @@ import {
     office,
     unity,
 
+    p00,
     p0,
     p1,
     p2,
@@ -72,6 +73,17 @@ export const NavLinks = [
 ];
 
 export const projects = [
+  {
+    name: "Portfolio for architects",
+    description: "An interactive portfolio for architects showcasing their skills and experience.",
+    image: p00,
+    technologies: [
+      { name: "React", color: "#61DBFB" },
+      { name: "Tailwind CSS", color: "#38BDF8" },
+    ],
+    linkGithub: "https://github.com/Katsukii01/Zoo_CV_site",
+    linkLiveSite: "https://zuzanna-klos.netlify.app/"
+  },
   {
     name: "RecruitHelper – AI-Powered Recruitment Platform",
     description: "An AI-enhanced platform streamlining candidate matching and recruitment process.",
@@ -208,7 +220,7 @@ export const projects = [
   },
   {
     name: "ANS AI Demo – React + Three.js",
-    description: "Interactive 3D AI demonstration using WebGL and voice recognition.",
+    description: "Interactive 3D AI demonstration using WebGL and FastAPI with Python backend.",
     image: p10,
     technologies: [
       { name: "React", color: "#61DBFB" },
@@ -399,17 +411,9 @@ export const experience = [
         logo: ans
     },
     {
-        name: "Carrefour",
-        years: "11.2020 - 04.2021",
-        position: "Merchandiser",
-        desc: "Gained valuable experience in a real work environment, developing a sense of responsibility and practical skills.",
-        type: "Side job",
-        logo:  carefour 
-    },
-    {
         name: "ANS Elbląg",
         years: "08.2024 - 02.2025",
-        position: "Intern front-end developer",
+        position: "Front-end developer",
         desc: "Focused on front-end development, gaining hands-on experience and working to improve and develop new skills in this area.",
         type: "Internship",
         logo: ans
