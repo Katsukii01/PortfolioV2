@@ -1,5 +1,5 @@
 import logo from './favicon.svg';
-import pfp from './pfp.svg';
+import pfp from './pfp.png';
 
 import css from "./technologies/css.png";
 import figma from "./technologies/figma.png";

@@ -44,7 +44,7 @@ const Hero = () => {
         <motion.img
           src={pfp}
           alt='Profile'
-          className='sm:w-80 sm:h-80 lg:w-96 lg:h-96  w-60 h-60 object-cover rounded-full border-4 border-cyan shadow-lg hover:shadow-2xl transition-shadow duration-300 '
+          className='sm:w-80 sm:h-80 lg:w-96 lg:h-96  w-60 h-60 object-cover rounded-full border-4 border-cyan shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-gradient-to-r from-cyan-500 to-blue-950'
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
         />
