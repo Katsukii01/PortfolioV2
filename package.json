@@ -17,6 +17,8 @@
     "@iconify/react": "^6.0.0",
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.7",
+    "@sentry/react": "^9.39.0",
+    "@sentry/vite-plugin": "^3.6.0",
     "framer-motion": "^11.5.4",
     "gh-pages": "^6.1.1",
     "i18next": "^25.2.1",

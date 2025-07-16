@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion';
-import { pfp } from '../assets';  // Sprawdź, czy ścieżka jest prawidłowa
+import { pfp} from '../assets';  // Sprawdź, czy ścieżka jest prawidłowa
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
@@ -18,6 +18,7 @@ const Hero = () => {
 
   return (
     <section className='relative w-full h-screen mx-auto flex flex-col-reverse lg:flex-row justify-center items-center text-center lg:text-left px-4 bg-light-glass'>
+    
       <div className='lg:w-1/2 flex flex-col justify-center items-start lg:items-end text-left px-24 '>
         <h1 className='text-2xl  sm:text-4xl md:text-4xl lg:text-6xl  font-bold text-white mb-4 '>
           {t('hi')}{' '}
@@ -67,6 +68,8 @@ const Hero = () => {
           </div>
         </a>
       </div>
+ 
+
     </section>
   );
 };
