@@ -34,9 +34,9 @@ import {
     p10,
     p11,
     p12,
+    p13,
 
     zs1,
-    carefour,
     ans,
 } from "../assets";
 import { 
@@ -258,6 +258,21 @@ export const projects = [
     ],
     linkGithub: "https://github.com/Katsukii01/user-managment-raw-code",
     linkLiveSite: "https://katsukii01.github.io/user-management/"
+  },
+  {
+    name: "React+PHP Cantor",
+    description: "A simple PHP application that uses React to create a dynamic web page.",
+    image: p13,
+    technologies: [
+      { name: "React", color: "#61DBFB" },
+      { name: "PHP", color: "#4F5D95" },
+      { name: "AirTable", color: "#E96C00" },
+      { name: "Tailwind CSS", color: "#38BDF8" },
+      { name: "Symfony", color: "#000000" },
+      { name: "API", color: "#00BFFF" }
+    ],
+    linkGithub: "https://github.com/Katsukii01/recruitment_task_fullstack/tree/KacperKordalskiSolution",
+    linkLiveSite: ""
   }
   ];
   
