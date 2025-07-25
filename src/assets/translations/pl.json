@@ -59,5 +59,7 @@
     "3D Developer Portfolio" :"Portfolio developera - 3D",
     "Personal portfolio built in 3D with animations and project showcase.":"Osobiste portfolio stworzone w 3D z animacjami i prezentacją projektów.",
     "User Management System" :"System zarządzania użytkownikami",
-    "Admin panel to manage users with filters, pagination, and mock API." :"Panel administracyjny do zarządzania użytkownikami z filtrami"
+    "Admin panel to manage users with filters, pagination, and mock API." :"Panel administracyjny do zarządzania użytkownikami z filtrami",
+    "React+PHP Cantor" : "React+PHP Kantor",
+    "A simple app that conects to NBP API and displays data and history of currency rates." : "Prosta aplikacja połączająca się z NBP API i wyświetlająca dane i historię kursów walut."
   }

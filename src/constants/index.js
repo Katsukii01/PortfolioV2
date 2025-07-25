@@ -261,7 +261,7 @@ export const projects = [
   },
   {
     name: "React+PHP Cantor",
-    description: "A simple PHP application that uses React to create a dynamic web page.",
+    description: "A simple app that conects to NBP API and displays data and history of currency rates.",
     image: p13,
     technologies: [
       { name: "React", color: "#61DBFB" },
